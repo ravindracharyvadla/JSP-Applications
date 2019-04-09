@@ -60,9 +60,11 @@ out.print("Contact Number: "+contnumber+"<br>"); */
 		<%-- <td><%= skill%></td> --%>
 		<td>
 			<%
+			if (skills != null && skills.length != 0) {
 				for(int i=0;i<skills.length;i++){
 					out.print(skills[i]+",");
 				}
+			}
 			%>
 		</td>
 	</tr>
