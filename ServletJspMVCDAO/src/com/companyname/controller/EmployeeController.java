@@ -39,9 +39,9 @@ public class EmployeeController extends HttpServlet {
 		employee.setContactNumber(contnumber);
 		
 		
-		EmployeeDaoImpl daoImpl=new EmployeeDaoImpl();
+		EmployeeService employeeService=new EmployeeServiceImpl();
 		try {
-			daoImpl.insert(employee);
+			employeeService.insert(employee);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
